@@ -1,0 +1,14 @@
+6
+2 5
+X 2 0 h
+A 0 0 v
+B 3 0 h
+C 4 1 v
+D 1 2 h
+E 2 2 v
+I 0 2 h
+F 2 3 v
+R 1 4 v
+Q 5 3 h
+O 0 5 v
+P 4 3 h

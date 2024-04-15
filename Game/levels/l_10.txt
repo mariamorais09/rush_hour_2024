@@ -1,0 +1,15 @@
+6
+2 5
+X 2 3 h
+A 0 1 h
+B 0 4 v
+C 1 1 v
+D 1 2 v
+E 3 3 v
+F 4 2 v
+G 4 4 h
+J 5 0 h
+I 5 3 h
+O 0 0 v
+R 1 5 v
+Q 3 0 h
