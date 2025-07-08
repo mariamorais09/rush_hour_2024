@@ -15,6 +15,7 @@ Rush Hour é um jogo de lógica cujo objetivo é mover o carro vermelho até à 
 - Modo de jogo manual, com a opção de pedir uma pista (hint).
 
 *Algoritmos de Pesquisa Implementados*
+
 Foram utilizados algoritmos de pesquisa para resolver os diferentes níveis:
 
 Pesquisa não informada:
