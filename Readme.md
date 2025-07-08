@@ -1,12 +1,60 @@
----------Rush Hour Game--------- O objetivo deste jogo é mover o carro vermelho para as últimas 2 posições da linha onde este se encontra. Para tal, é necessário mover os outros veículos presentes no tabuleiro para desimpedir o seu caminho. O tabuleiro do jogo é composto por uma grelha quadrangular (cujo tamanho pode variar apesar de apenas termos definido níveis para tabuleiros 6x6) e os veículos presentes podem ocupar 2 ou 3 casas, vertical ou horizontalmente. Veículos na vertical podem apenas mover-se para cima e para baixo e carros na horizontal podem apenas mover-se para a esquerda e para a direita, desde que não excedam os limites do tabuleiro.
+**Rush Hour Game**
+Rush Hour é um jogo de lógica cujo objetivo é mover o carro vermelho até à saída, localizada nas duas últimas posições da linha onde este se encontra. Para isso, será necessário deslocar os outros veículos no tabuleiro, de forma a desimpedir o caminho.
 
----Funcionalidades--- Interface textual e interface gráfica; Possibilidade de escolher tabuleiros com diferentes configurações iniciais com níveis de dificuldade diferentes; Opção de ver o jogo ser jogado por um algoritmo de pesquisa implementado; Opção de jogar o jogo por si, com possibilidade de pedir 1 pista.
+*Regras do Jogo*
+- O tabuleiro é uma grelha quadrada (atualmente foram definidos apenas níveis para grelhas 6x6).
+- Os veículos podem ocupar 2 ou 3 casas e estar orientados na vertical ou na horizontal.
+- Veículos verticais apenas se podem mover para cima e para baixo.
+- Veículos horizontais apenas se podem mover para a esquerda e para a direita.
+- Nenhum veículo pode ultrapassar os limites do tabuleiro ou atravessar outros veículos.
 
----Algoritmos de pesquisa--- Para resolver os diferentes níveis de dificuldade foram implementados os seguintes algoritmos: Breadth-First Search(BFS) e Depth-First Search(DFS) -> pesquisa desinformada; A* e Greedy Seach -> pesquisa informada, usando 2 heurísticas diferentes: Distância de Manhattan e número de carros a bloquear diretamente o carro vermelho.
+*Funcionalidades*
+- Interface textual e interface gráfica.
+- Seleção de níveis com diferentes configurações e dificuldades.
+- Possibilidade de ver o jogo a ser resolvido automaticamente por algoritmos de pesquisa.
+- Modo de jogo manual, com a opção de pedir uma pista (hint).
 
----Requisitos--- Python; Bibliotecas Pygame, sys
+*Algoritmos de Pesquisa Implementados*
+Foram utilizados algoritmos de pesquisa para resolver os diferentes níveis:
 
----Como usar a interface textual--- Para usar a interface textual basta aceder ao terminal, estando no diretório "Game" e executar o seguinte comando: "python3 rush_hour_terminal.py". Pode aprender as regras, jogar por si ou ainda ver qualquer um dos algoritmos de pesquisa resolver 1 dos 10 níveis disponíveis. Ao jogar por si, pode ainda usufruir de uma única dica selecionando 'H'(hint) em qualquer ponto do seu jogo. Para movimentar um veículo terá de selecionar a letra que lhe corresponde e depois a direção desejada. Os espaços vazios para onde pode movimentar qualquer um dos veículos são representados por '*' e o veículo vermelho é representado pela letra 'X'.
+Pesquisa não informada:
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
 
----Como usar a interface gráfica--- Para conseguir abrir a interface gráfica, terá de instalar a biblioteca Pygame. Execute o comando "python3 rush_hour_graphical_interface.py" estando no diretório "Game". Aprenda as regras selecionando "Rules" ou selecione "Play". Escolha a dificuldade pretendida: Easy(nível 3), Medium(nível 6) ou Hard(nível 10) e veja esse nível ser jogado pelo algoritmo de pesquisa Breadth-first search (um dos mais eficientes), onde o objetivo é sempre o mesmo: fazer com que o carro vermelho chegue à extremidade direita da sua linha.
+Pesquisa informada:
+- A*
+- Greedy Search
 
+As pesquisas informadas utilizam duas heurísticas distintas:
+- Distância de Manhattan entre o carro vermelho e a saída.
+- Número de veículos que bloqueiam diretamente o caminho do carro vermelho.
+
+*Requisitos*
+- Python 3
+- Bibliotecas: pygame, sys
+
+`Como usar a interface textual*
+- Aceder ao terminal, no diretório Game.
+- Executar o comando: python3 rush_hour_terminal.py
+  
+Opções disponíveis:
+- Aprender as regras do jogo.
+- Jogar manualmente qualquer um dos 10 níveis disponíveis.
+- Ver um algoritmo de pesquisa resolver um nível.
+- Durante o jogo manual, pode pedir uma única pista premindo a tecla H.
+
+Controlo do jogo:
+- Selecione a letra correspondente ao veículo que pretende mover.
+- Em seguida, escolha a direção do movimento.
+- Os espaços vazios são representados por *.
+- O carro vermelho é representado pela letra X.
+
+
+*Como usar a interface gráfica*
+- Instale a biblioteca pygame (se ainda não estiver instalada).
+- No diretório Game, execute: python3 rush_hour_graphical_interface.py
+
+No menu principal:
+- Selecione "Rules" para rever as regras do jogo.
+- Selecione "Play" para escolher o nível de dificuldade: Easy (nível 3), Medium (nível 6), Hard (nível 10)
+- O jogo será resolvido automaticamente utilizando o algoritmo Breadth-First Search.
