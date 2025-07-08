@@ -1,4 +1,4 @@
-*Projeto desenvolvido no âmbito da unidade curricular de Elementos de Inteligência Artificial e Ciência de Dados no segundo semestre no ano letivo 2023/2024*
+*Projeto desenvolvido no âmbito da unidade curricular de Elementos de Inteligência Artificial e Ciência de Dados no segundo semestre do ano letivo 2023/2024*
 
 **Rush Hour Game**
 
