@@ -1,3 +1,5 @@
+*Projeto desenvolvido no âmbito da unidade curricular de Elementos de Inteligência Artificial e Ciência de Dados no segundo semestre no ano letivo 2023/2024*
+
 **Rush Hour Game**
 Rush Hour é um jogo de lógica cujo objetivo é mover o carro vermelho até à saída, localizada nas duas últimas posições da linha onde este se encontra. Para isso, será necessário deslocar os outros veículos no tabuleiro, de forma a desimpedir o caminho.
 
