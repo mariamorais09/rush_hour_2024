@@ -34,7 +34,7 @@ As pesquisas informadas utilizam duas heurísticas distintas:
 - Python 3
 - Bibliotecas: pygame, sys
 
-`Como usar a interface textual*
+*Como usar a interface textual*
 - Aceder ao terminal, no diretório Game.
 - Executar o comando: python3 rush_hour_terminal.py
   
